@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="215dp"
+        android:layout_height="65dp"
+        android:src="@drawable/hello"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"></ImageView>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"></EditText>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"></EditText>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"></EditText>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"></EditText>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/conditions"
+            android:layout_marginTop="30dp"></CheckBox>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dustyWhite"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_button"
+            android:layout_marginTop="20dp"
+
+            android:hint="@string/sign_in"></Button>
+    </LinearLayout>
+
+</LinearLayout>
