@@ -28,21 +28,25 @@ class ProductActivity : AppCompatActivity() {
             when(type){
                 "coldDrinks" -> {
                     cargarColdDrinks()
+                    title_product.setImageResource(R.drawable.cold_drinks)
                     var adaptador = AdaptadorProductos(this,coldDrinks)
                     list_product.adapter = adaptador
                 }
                 "hotDrinks" -> {
                     cargarHotDrinks()
+                    title_product.setImageResource(R.drawable.hot_drinks)
                     var adaptador = AdaptadorProductos(this,hotDrinks)
                     list_product.adapter = adaptador
                 }
                 "sweets" -> {
                     cargarSweets()
+                    title_product.setImageResource(R.drawable.sweets)
                     var adaptador = AdaptadorProductos(this,sweets)
                     list_product.adapter = adaptador
                 }
                 "salties" -> {
                     cargarSalties()
+                    title_product.setImageResource(R.drawable.salties)
                     var adaptador = AdaptadorProductos(this,salties)
                     list_product.adapter = adaptador
                 }
